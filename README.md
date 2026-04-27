@@ -7,12 +7,11 @@ wtf-ai consists of two utilities that leverage Ollama and uv to bring large lang
 1. `wtf` (The Correction Wrapper)
 Inspired by the original [thefuck](https://github.com/nvbn/thefuck) cli-tool: When a command fails or you make a typo, simply type wtf. The tool analyzes your last command and its context, suggests a correction using a local LLM, and allows you to execute the fix with a single keystroke.
 
-## 2. `ai` (The Standalone CLI)
+2. `ai` (The Standalone CLI)
 A direct interface to your local models. It is designed to be highly "pipeable," allowing you to send terminal output, file contents, or direct questions to the AI and receive concise, markdown-formatted responses.
 
-# Installation
-## Homebrew
-The easiest way to install and manage wtf-ai on macOS and Linux.
+# Installation (homebrew)
+The easiest way to install and manage wtf-ai on macOS (and Linux if you're lucky).
 
 Bash
 ```bash
