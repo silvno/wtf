@@ -13,10 +13,18 @@ A direct interface to your local models. It is designed to be highly "pipeable,"
 # Installation (homebrew)
 The easiest way to install and manage wtf-ai on macOS (and Linux if you're lucky).
 
-Bash
 ```bash
 brew tap silvno/tap
 brew install wtf-ai
+```
+
+After the installation has finished, pull the default model (~10GB).
+```bash
+ollama pull gemma4:latest
+```
+Finally, source the `wtf.sh` in your `.zshrc` or `.bashrc`:
+```
+source $HOMEBREW_REPOSITORY/opt/wtf-ai/share/wtf-ai/wtf.sh
 ```
 
 # Usage Examples
