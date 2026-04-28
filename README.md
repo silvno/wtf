@@ -44,7 +44,7 @@ Run this? [Y/n]:
 
 # Querying with ai
 
-##Direct Questions
+## Direct Questions
 
 ```bash
 $ ai "What is the command to list all listening ports on macOS?"
@@ -57,7 +57,13 @@ $ ai "What is the command to list all listening ports on macOS?"
 $ cat error.log | tail -n 20 | ai "Explain why this service failed to start"
 ```
 
-#Configuration
+## Scripts etc.
+
+```bash
+$ ai "python script to list all s3 buckets" > list-s3.py
+```
+
+# Configuration
 
 wtf-ai can be customized using environment variables in your shell configuration file (.zshrc or .bashrc).
 
@@ -65,7 +71,7 @@ wtf-ai can be customized using environment variables in your shell configuration
 export AI_MODEL="yourfavoritemodel" # defaults to gemma4:latest
 ```
 
-#Requirements
+# Requirements
 
 - `ollama`: Must be installed and running.
 - `uv`: to isolate python dependencies
